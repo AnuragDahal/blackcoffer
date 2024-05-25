@@ -1,0 +1,6 @@
+nodemodules/
+env/
+__pycache__/
+vscode/
+*.json
+.env
