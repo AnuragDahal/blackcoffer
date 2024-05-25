@@ -3,6 +3,9 @@
 ## Overview
 
 This project is part of the internship task at Blackcoffer. The project is divided into backend and frontend components.
+The backend is written in python using popular library called flask and the frontend is just a basic frontend written in React
+
+
 ## Installations
 
 ### Backend
