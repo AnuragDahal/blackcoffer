@@ -1,10 +1,10 @@
 from core.server import app
 from core import db
 import os
-from core.libs import loadintodb
+# from core.libs import loadintodb
 
 with app.app_context():
-    # from core.models.reportmodel import EnergyReport  
+    from core.models.reportmodel import EnergyReport  
     db.create_all()
     # loadintodb.load_into_db()  
 
