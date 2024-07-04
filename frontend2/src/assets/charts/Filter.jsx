@@ -77,7 +77,7 @@ function Dropdown({ setRouteEndpoint, setFilter, setQueryParams }) {
             </button>
             {nestedOpen.endyear && (
               <div className="nested-dropdown-content">
-                {[2020, 2021, 2022, 2024, 2025,2027].map((year) => (
+                {[2020, 2021, 2022, 2024, 2025, 2027].map((year) => (
                   <button
                     onClick={() => {
                       setQueryParams(year);
@@ -134,17 +134,15 @@ function Dropdown({ setRouteEndpoint, setFilter, setQueryParams }) {
             </button>
             {nestedOpen.source && (
               <div className="nested-dropdown-content">
-                {["EIA", "SBWire", "WSJ", "Reuters"].map(
-                  (source) => (
-                    <button
-                      onClick={() => {
-                        setQueryParams(source);
-                      }}
-                    >
-                      {source}
-                    </button>
-                  )
-                )}
+                {["EIA", "SBWire", "WSJ", "Reuters"].map((source) => (
+                  <button
+                    onClick={() => {
+                      setQueryParams(source);
+                    }}
+                  >
+                    {source}
+                  </button>
+                ))}
               </div>
             )}
             <button
@@ -218,7 +216,7 @@ function Filter() {
   useEffect(() => {
     (async () => {
       const res = await fetch(
-        `http://localhost:5000/reports/${routeEndPoint}?${filter}=${encodeURIComponent(
+        `https://blackcoffer-u70m.onrender.com/admin/${routeEndPoint}?${filter}=${encodeURIComponent(
           queryParams
         )}`
       );
@@ -226,7 +224,7 @@ function Filter() {
       const json = await res.json();
       const data = json.data;
       console.log(data);
-4
+      4;
 
       // Define eye-pleasing colors
       const eyePleasingColors = [
