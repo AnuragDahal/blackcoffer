@@ -223,7 +223,6 @@ function Filter() {
 
       const json = await res.json();
       const data = json.data;
-      console.log(data);
       4;
 
       // Define eye-pleasing colors
@@ -336,7 +335,7 @@ function Filter() {
           ],
         },
       };
-      console.log(transformedData);
+
       setData(transformedData);
     })();
   }, [queryParams]);

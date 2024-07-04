@@ -38,7 +38,7 @@ function Dashboard() {
       );
       const json = await res.json();
       const data = json.data;
-      console.log(data);
+
 
       // Define eye-pleasing colors
       const eyePleasingColors = [
@@ -150,7 +150,6 @@ function Dashboard() {
           ],
         },
       };
-      console.log(transformedData);
       setData(transformedData);
     })();
   }, []);
