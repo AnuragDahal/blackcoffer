@@ -1,12 +1,7 @@
-from core.server import app
-from core import db
+from core import create_app
 import os
-# from core.libs import loadintodb
 
-with app.app_context():
-    from core.models.reportmodel import EnergyReport
-    db.create_all()
-    # loadintodb.load_into_db()
+app = create_app()
 
 if __name__ == "__main__":
     # os.environ["FLASK_ENV"] = "development"
